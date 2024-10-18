@@ -34,9 +34,7 @@ app.post("/sign/", async (req, res) => {
   //     values(${1},'${name}','${email}','${password}')
   //     `;
   //   await db.run(query);
-  if (req.body !== undefined) {
-    res.send(req.body);
-  }
+  res.send(req.body);
 });
 
 app.get("/data", async (req, res) => {
